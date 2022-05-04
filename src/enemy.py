@@ -18,7 +18,10 @@ class Enemy(pygame.sprite.Sprite):
         self.rect.y = y
         #set other attributes
         self.name = name + str(id(self))
-        self.speed = 2
+        self.speed = 3
 
     def update(self):
-        print("'Update me,' says " + self.name)
+        #print("'Update me,' says " + self.name)
+      self.rect.x += random.randint(-1,1)
+      self.rect.y += random.randint(-1,1)
+      #self.image.explosion.png

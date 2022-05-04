@@ -1,8 +1,10 @@
 import sys
 import pygame
 import random
+#import explosion
 from src import hero
 from src import enemy
+#from src import explosion
 
 
 class Controller:
@@ -24,6 +26,7 @@ class Controller:
             y = random.randrange(100, 400)
             self.enemies.add(enemy.Enemy("Boogie", x, y, 'assets/enemy.png'))
         self.hero = hero.Hero("Conan", 50, 80, "assets/hero.png")
+        #pygame.screen.explosion('assets/explosion.png')
         self.all_sprites = pygame.sprite.Group((self.hero,) + tuple(self.enemies))
         self.state = "GAME"
 
@@ -59,12 +62,14 @@ class Controller:
                     else:
                         self.background.fill((250, 0, 0))
                         self.enemies.add(e)
+                        #self.background.fill(explosion.png)
 
             # redraw the entire screen
             self.enemies.update()
-            self.screen.blit(self.background, (0, 0))
+            self.screen.blit(self.background, (0,0))
             if(self.hero.health == 0):
                 self.state = "GAMEOVER"
+                #self.screen.explosion.png
             self.all_sprites.draw(self.screen)
 
             # update the screen
@@ -73,8 +78,9 @@ class Controller:
     def gameOver(self):
         self.hero.kill()
         myfont = pygame.font.SysFont(None, 30)
-        message = myfont.render('Game Over', False, (0, 0, 0))
+        message = myfont.render('Game Over', False, (0,0,0))
         self.screen.blit(message, (self.width / 2, self.height / 2))
+        pygame.screen.explosion.py
         pygame.display.flip()
         while True:
             for event in pygame.event.get():

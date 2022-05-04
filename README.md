@@ -8,20 +8,18 @@
 Replace anything surrounded by the `< >` symbols._
 
 ## SUMMARY:
- < Provide a short description of your program's functionality. No more than a couple sentences. >
+ this is a program for a game where the enemy moves randomly in order to kill the hero. 
 #### Unique Feature
- < Describe the unique feature you added >
-
+I changed the picture of the enemy to a picture of voldemort.
 ## GRACE DAYS
-Grace days used for this assignment: < # >
+Grace days used for this assignment: 2
 
-Grace days remaining: < # >/5
+Grace days remaining: 2/5
 
 ## KNOWN BUGS AND INCOMPLETE PARTS:
- < What parts of the project you were not able to complete >
+I tried to make my feature being the screen 'exploding' after the hero is killed but was unable to suscessfully incorperate that into the code. That is why it is late because I kept on trying to get it to work. 
 
 ## REFERENCES:
- < List any outside resources used >
-
+google for the images 
 ## MISCELLANEOUS COMMENTS:
  < Anything you would like the grader to know >
